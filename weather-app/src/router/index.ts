@@ -1,17 +1,18 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import WeatherDashboard from '../components/WeatherDashboard.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
+import WeatherDashboard from '../WeatherDashboard.vue';
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
+    name: 'WeatherDashboard',
     component: WeatherDashboard
   }
-]
+];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes
-})
+});
 
-export default router
+export default router;

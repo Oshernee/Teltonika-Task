@@ -1,6 +1,8 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <router-view />
+  <router-view></router-view>
+  <Notifications />
 </template>
+
+<script setup lang="ts">
+import Notifications from './components/Notification.vue';
+</script>
