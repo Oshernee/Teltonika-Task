@@ -59,42 +59,42 @@ Follow these instructions to set up and run the project locally.
 1.  **Clone the repository**
 
     ```bash
-    `git clone https://github.com/your-username/weather-dashboard.git
-    cd weather-dashboard`
+    git clone https://github.com/your-username/weather-dashboard.git
+    cd weather-dashboard
     ```
 
 2.  **Install dependencies**
 
     ```bash
-    `npm install
+    npm install
     ```
 
 3.  **Set up environment variables**\
     Create a `.env` file in the root directory containing your OpenWeatherMap API key:
 
     ```bash
-    `VITE_API_KEY=your_openweathermap_api_key`
+    VITE_API_KEY=your_openweathermap_api_key`
     ```
     Replace `your_openweathermap_api_key` with a valid key from [OpenWeatherMap](https://openweathermap.org/).
 
 4.  **Run the development server**
 
     ```bash
-    `npm run dev
+    npm run dev
     ```
     The app will be available at `http://localhost:5173` (or another port displayed in the terminal).
 
 5.  **Build for production**
 
     ```bash
-    `npm run build
+    npm run build
     ```
     Production-ready assets will be generated in the `dist/` folder.
 
 6.  **Run on HTTP**
 
     ```bash
-    `npx http-server ./dist
+    npx http-server ./dist
     ```
     Production-ready assets will be generated in the `dist/` folder.
 
